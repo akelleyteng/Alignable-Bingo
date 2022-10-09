@@ -68,17 +68,8 @@ addEventListener('DOMContentLoaded', (event) => {
         let table = document.createElement(`div`)
         table.className = `.main-table--${currentTable}`
         table.classList.add('main-table')
+        table.classList.add('pb')
         table.innerHTML = `
-        <div class="header-wrapper">
-        <h1>Alignable Bingo</h1>
-        <img src='./alignable-img.png'/>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="row">
             <div class="grid-marker-row box">1</div>
         </div>

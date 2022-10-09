@@ -1,16 +1,16 @@
-.header-wrapper{
-    position: relative;
-   margin-top: 10%;
 
-
-}
 body{
-    width: 75%;
+    height: 100%;
+    width: fit-content;
+    font-size: small;
 }
+.pb{page-break-after: always;}
 .main-table{
     display: flex;
-    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
     flex-direction: column;
+    margin-right: 100px;
 }
 h1{
     position: absolute;
