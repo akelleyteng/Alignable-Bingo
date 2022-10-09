@@ -1,0 +1,42 @@
+.header-wrapper{
+    position: relative;
+   margin-top: 10%;
+
+
+}
+body{
+    width: 75%;
+}
+.main-table{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    border: solid 1px black;
+    padding: 2%;
+    width: 100%;
+}
+.box-content{
+    width: 180px;
+    height: 100%;
+}
+.grid-marker-row{
+    justify-content: center;
+    display: inline;
+    padding: 8% 2%;
+    width: fit-content;
+}
+.grid-marker-col{
+    padding: 0 0;
+}
