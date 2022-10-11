@@ -38,7 +38,7 @@ addEventListener('DOMContentLoaded', (event) => {
         {Ally: "My dog climbed a tree once to chase a squirrel."},
         {Allie: "I've seen 5 out of the 7 wonders of the worlds so far! 2 more to go!"},
         {Abby: "I’m a twin."},
-        {Amanda: "Member of the 4,000 footer club…:)."},
+        {Amanda: "Member of the 4,000 footer club."},
         {Bailey: "I can slalom water ski."},
         {Andrew:" When I was a teenager, I “borrowed” a 6-foot-tall iPhone 4S display from an AT&T parking lot because it had Siri on it and I thought it was so cool!"},
         {Zaden: "I made it to the callback rounds of auditioning for a Harrison Ford & Brendan Frasier movie (Extraordinary Measures). Unfortunately I didn’t get the part and my career as a child actor ended before it began."},
@@ -46,16 +46,24 @@ addEventListener('DOMContentLoaded', (event) => {
         {Milynn: "I’m a HUGE crocheter & have made over 100 projects in the past 2 years!"},
         {Michael: "Has solved the New York Times crossword every day for the last 5 years"},
         {Josh: "I have five chickens for whom I built a custom chicken coop palace. So far it kept a 400-lb. bear out so SO FAR I'm happy!"},
-       { Geoff: "When I was 16, I played in the orchestra for three months of a Broadway-backed production of West Side Story."},
-      { Piotr: "Coffee makes me want to go to sleep, 9 out of 10 times. But randomly, it makes me a Duracell Bunny.  y"},
+       {Geoff: "When I was 16, I played in the orchestra for three months of a Broadway-backed production of West Side Story."},
+      {Piotr: "Coffee makes me want to go to sleep, 9 out of 10 times. But randomly, it makes me a Duracell Bunny.  y"},
         {Pascal:  "I have got over 250 cultivars of edible perennials planted at my house."},
-       { Ean:  "I have a twin brother and when we were kids I broke my right arm, he broke his left arm, I got stitches above my left  eye, and he got stitches above his right eye all in the span of ~two years."},
-       { Eli: "Successfully taught my significant other how to ski....and now she’s better at it than I am."},
-       { Chris: "I love spicy food and spent the summer cooking recipes with ghost peppers from my garden."},
+       {Ean:  "I have a twin brother and when we were kids I broke my right arm, he broke his left arm, I got stitches above my left  eye, and he got stitches above his right eye all in the span of ~two years."},
+       {Eli: "Successfully taught my significant other how to ski....and now she’s better at it than I am."},
+       {Chris: "I love spicy food and spent the summer cooking recipes with ghost peppers from my garden."},
         {Kathy: "I have watched Game of Thrones a total of 4 times from start to finish."},
         {Lucy: "When I was 11, I wrote Warrior Cats fan fiction - over 100 pages!"},
         {Ben: "Played football in Cardinal’s Stadium for the state finals. "},
-        {Logan: "I built the American Ninja Warrior obstacle “The Salmon Ladder” in my backyard."} 
+        {Logan: "I built the American Ninja Warrior obstacle “The Salmon Ladder” in my backyard."}, 
+         {Kyu: "Will run 1,000 miles this year."},
+         {Abhi: "I got eagle scout in under 2 years"},
+         {Jerry: "At the age of 7 I was in a public service announcement on seatbelt use/safety."},
+         {Steven: " I paid for university working as a musician."},
+         {Allen: "I own a 5-gallon tank with over 100 shrimp. And another 20-gallon tank where one fish magically disappeared. "},
+         {Nick: "I've visited 50+ cities in the last 2 years"},
+         {Ryan: "I had a broken wrist for 7 weeks before it was diagnosed."}
+
     ]
     
 
@@ -70,6 +78,14 @@ addEventListener('DOMContentLoaded', (event) => {
         table.classList.add('main-table')
         table.classList.add('pb')
         table.innerHTML = `
+            <div class "header" justify-content: center;> 
+<H2 style="font-family: tahoma; font-size: 60px; text-align: center;">ALIGNABLE BINGO </H2>
+<img source="alignable-img.png">
+
+
+    </div>
+                <br>
+                            <br>
         <div class="row">
             <div class="grid-marker-row box">1</div>
         </div>
@@ -77,6 +93,8 @@ addEventListener('DOMContentLoaded', (event) => {
         <div class="row"><div class="grid-marker-row box">3</div></div>
         <div class="row"><div class="grid-marker-row box">4</div></div>
         <div class="row"><div class="grid-marker-row box">5</div></div>
+
+
         `
 
         for( let currentRow = 0; currentRow<5; currentRow++){
@@ -88,8 +106,9 @@ addEventListener('DOMContentLoaded', (event) => {
                 currentFunFactBox.className="box"
                 currentFunFactBox.innerHTML=
                 `
-                <div class="box">
-                    <div class="box-content">
+                <div border:transparent>
+                    <div class="box-content"     width: 180px;
+    height: 100%>
                     ${currentFunFact}
                     </div>
                 </div>`
@@ -99,6 +118,5 @@ addEventListener('DOMContentLoaded', (event) => {
             }
         }
     }
-
 
 });
