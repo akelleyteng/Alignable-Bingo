@@ -1,8 +1,10 @@
 
+
 body{
-    height: 100%;
+    height: 99%;
     width: fit-content;
-    font-size: small;
+    font-size: 14pt;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 .pb{page-break-after: always;}
 .main-table{
@@ -23,7 +25,7 @@ h1{
     flex-direction: row;
 }
 .box{
-    border: solid 1px black;
+    border: solid; 1px black;
     padding: 2%;
     width: 100%;
 }
@@ -39,4 +41,7 @@ h1{
 }
 .grid-marker-col{
     padding: 0 0;
+}
+header{
+        justify-content: center;
 }
